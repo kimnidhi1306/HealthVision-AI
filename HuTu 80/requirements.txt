@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+seaborn
+Pillow
+opencv-python
+scipy
+scikit-learn
+torch
+torchvision
+segmentation-models-pytorch
+torchinfo
+tqdm
