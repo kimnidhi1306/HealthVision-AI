@@ -118,6 +118,7 @@ def predict_covid(user_data):
 
 
 # Streamlit app
+st.cache_data
 def main():
     home_page_content = ""
 
