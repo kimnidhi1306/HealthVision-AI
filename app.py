@@ -542,7 +542,7 @@ def main():
             st.title("COVID-19 Prediction Result")
             st.write(f"The prediction is: {prediction_text}")
     
-    elif selected == 'Endoscopic image Classification Classification':
+    elif selected == 'Endoscopic image Classification':
         # st.title("Endoscopic image Classification Classification")
         # st.write("Upload an endoscopic image, and we'll classify it into one of the following categories:")
         # st.write("1. dyed-lifted-polyps\n2. dyed-resection-margins\n3. esophagitis\n4. normal-cecum")
