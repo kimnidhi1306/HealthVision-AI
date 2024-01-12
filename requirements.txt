@@ -1,6 +1,6 @@
 streamlit_option_menu 
 pandas 
-streamlit
+streamlit>=1.10.0
 tensorflow==2.10.0
 numpy
 opencv-python-headless
