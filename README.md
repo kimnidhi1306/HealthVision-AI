@@ -52,12 +52,12 @@ To run the HealthVision AI application locally, follow these steps:
 ## Models
 HealthVision AI uses various machine learning models for predictions. Here are some of the key models:
 
-- **Diabetes Prediction: Random Forest Classifier
-- **Chronic Kidney Disease Prediction: Random Forest Classifier
-- **Breast Cancer Prediction: Custom Breast Cancer Prediction Model
-- **Parkinson's Disease Prediction: Random Forest Classifier
-- **COVID-19 Prediction: k-Nearest Neighbors (kNN) Classifier
-- **Endoscopic Image Classification: ResNet50-based Model
-- **Diabetic Retinopathy Detection: Custom Convolutional Neural Network (CNN)
-- **Alzheimer's Brain Classification: Custom CNN-based Model
-- **Cell Segmentation: UNet Segmentation Model
+- Diabetes Prediction: Random Forest Classifier
+- Chronic Kidney Disease Prediction: Random Forest Classifier
+- Breast Cancer Prediction: Custom Breast Cancer Prediction Model
+- Parkinson's Disease Prediction: Random Forest Classifier
+- COVID-19 Prediction: k-Nearest Neighbors (kNN) Classifier
+- Endoscopic Image Classification: ResNet50-based Model
+- Diabetic Retinopathy Detection: Custom Convolutional Neural Network (CNN)
+- Alzheimer's Brain Classification: Custom CNN-based Model
+- Cell Segmentation: UNet Segmentation Model
