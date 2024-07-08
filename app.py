@@ -1,19 +1,15 @@
 import os
 import streamlit as st
 import numpy as np
-import io 
 import cv2
 from PIL import Image
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.resnet50 import preprocess_input
-from tensorflow import keras
 import segmentation_models_pytorch as smp
 import torch
 from torchvision import transforms
-import pandas as pd
 import pickle
-from streamlit_option_menu import option_menu
 from sklearn.ensemble import RandomForestClassifier
 
 # Get the current working directory
@@ -100,7 +96,7 @@ def kvasir_predict_image(image_path):
     confidence = np.max(predictions) * 100
     return predicted_class, confidence
 
-# Function to predict the class
+# Function to predict the class for diabetic retinopathy
 def diabetic_retinopathy_predict_class(image):
     image = np.array(image) / 255.0
     new_model = tf.keras.models.load_model(diabetic_retinopathy_path)  # Assuming it's a Keras model
@@ -115,7 +111,7 @@ def main():
     page_options = ["Home", "Diabetic Retinopathy Prediction", "Heart Disease Prediction", 
                     "Kidney Disease Prediction", "Breast Cancer Prediction", "Parkinson's Disease Prediction", 
                     "Cell Segmentation", "Alzheimer's Disease Prediction", "COVID-19 Prediction"]
-    prediction_selected = option_menu("Navigate to", page_options)
+    prediction_selected = st.sidebar.selectbox("Navigate to", page_options)
 
     if prediction_selected == "Home":
         st.write("Welcome to HealthVision AI. Select a prediction task from the sidebar.")
